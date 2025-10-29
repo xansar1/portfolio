@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammed Ansar | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1 data-aos="fade-down">Muhammed Ansar</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certificate</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+<!-- ===== HERO SECTION ===== -->
+<section id="hero">
+  <div class="hero-content" data-aos="fade-up">
+    <img src="assets/images/profile.jpg" alt="Muhammed Ansar" class="hero-img">
+    <h2>Hi, I'm <span>Muhammed Ansar</span></h2>
+    <p>A passionate Data Science & Web Development Enthusiast</p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/muhammed-ansar-97952b255" target="_blank">LinkedIn</a>
+      <a href="https://github.com/xansar1" target="_blank">GitHub</a>
+    </div>
+
+    <!-- ✅ Download Resume Button -->
+    <a href="assets/resume/Muhammed_Ansar_Resume.pdf" download class="resume-btn">
+      📄 Download Resume
+    </a>
+  </div>
+</section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" data-aos="fade-right">
+    <h2>About Me</h2>
+    <p>I'm <strong>Muhammed Ansar</strong>, a tech enthusiast skilled in Data Science, Web Development, and Video Editing.  
+    I love building real-world projects that combine data, creativity, and functionality.</p>
+
+    <div class="video-container">
+      <div>
+        <h3>🎥 Introduction Video</h3>
+        <video controls width="300" src="assets/videos/intro.mp4"></video>
+      </div>
+      <div>
+        <h3>🎬 Video Editing Sample</h3>
+        <video controls width="300" src="assets/videos/editing.mp4"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" data-aos="fade-up">
+    <h2>My Skills</h2>
+    <ul class="skills-list">
+      <li>Python (Pandas, Numpy, Matplotlib, Seaborn)</li>
+      <li>nlp</li>
+      <li>Streamlit</li>
+      <li>Machine Learning</li>
+      <li>Web Development (HTML, CSS, JS)</li>
+      <li>Data Visualization</li>
+      <li>Video Editing</li>
+      <li>Artificial inteligence</li>
+    </ul>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" data-aos="fade-left">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>🧠 Zyvro Product Analyze</h3>
+      <p>A Data Science project focused on analyzing product performance and generating business insights using Python and visualization tools.</p>
+      <img src="assets/screenshots/zyvro_product_analyze.jpg" alt="Zyvro Product Analyze Screenshot">
+    </div>
+
+    <div class="project">
+      <h3>🚗 Washly Go</h3>
+      <p>A modern web-based car wash and detailing booking platform built with HTML, CSS, and backend logic to connect customers with service providers.</p>
+      <img src="assets/screenshots/washly_go.jpg" alt="Washly Go Screenshot">
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATE ===== -->
+  <section id="certificates" data-aos="fade-up">
+    <h2>Certificate</h2>
+    <div class="certificates">
+      <img src="assets/certificates/datascience.jpg" alt="Data Science Certificate">
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" data-aos="zoom-in">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:xansar89@gmail.com">xansar89@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammed-ansar-97952b255" target="_blank">linkedin.com/in/muhammed-ansar-97952b255</a></p>
+    <p>GitHub: <a href="https://github.com/xansar1" target="_blank">github.com/xansar1</a></p>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Muhammed Ansar | All Rights Reserved</p>
+  </footer>
+
+  <script>
+    AOS.init({ duration: 1000, once: true });
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
