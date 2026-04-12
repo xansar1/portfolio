@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Muhammed Ansar | AI & Data Science Portfolio</title>
+  <meta name="description" content="AI Engineer and Data Science Portfolio of Muhammed Ansar">
   <link rel="stylesheet" href="style.css"/>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -11,129 +12,125 @@
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header>
-    <h1>Muhammed Ansar</h1>
+  <header class="header">
+    <h1 class="logo">Muhammed Ansar</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#certificates">Certificates</a>
+      <a href="#achievements">Achievements</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- ===== HERO ===== -->
-  <section id="hero">
+  <section id="hero" class="hero">
     <div class="hero-content" data-aos="fade-up">
       <img src="assets/images/profile.jpg" alt="Muhammed Ansar" class="hero-img">
-      <h2>AI & Data Science Product Builder</h2>
+
+      <h2>AI Engineer • Data Scientist • Product Builder</h2>
+
       <p>
-        Building production-ready AI dashboards, forecasting systems,
-        NLP pipelines, and real SaaS data products.
+        I build production-ready AI products using FastAPI, Streamlit,
+        NLP, Forecasting, and ML systems that solve real business problems.
       </p>
 
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/muhammed-ansar-97952b255" target="_blank">LinkedIn</a>
-        <a href="https://github.com/xansar1" target="_blank">GitHub</a>
+      <div class="hero-buttons">
+        <a href="https://github.com/xansar1" target="_blank" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/muhammed-ansar-97952b255" target="_blank" class="btn">LinkedIn</a>
+        <a href="assets/resume/Muhammed_Ansar_Resume.pdf" download class="btn primary">
+          Download Resume
+        </a>
       </div>
-
-      <a href="assets/resume/Muhammed_Ansar_Resume.pdf" download class="resume-btn">
-        📄 Download Resume
-      </a>
     </div>
   </section>
 
   <!-- ===== ABOUT ===== -->
-  <section id="about" data-aos="fade-right">
+  <section id="about" class="section" data-aos="fade-right">
     <h2>About Me</h2>
     <p>
       I specialize in building real-world AI and data science products
-      that solve business problems through forecasting, automation,
-      KPI dashboards, NLP, and executive reporting systems.
-      My focus is converting raw data into decision-ready SaaS solutions.
+      focused on ATS systems, analytics dashboards, NLP pipelines,
+      forecasting engines, SaaS platforms, and automation workflows.
+      My mission is turning raw data into decision-ready business intelligence.
     </p>
   </section>
 
   <!-- ===== SKILLS ===== -->
-  <section id="skills" data-aos="fade-up">
+  <section id="skills" class="section" data-aos="fade-up">
     <h2>Core Skills</h2>
-    <ul class="skills-list">
-      <li>Python</li>
-      <li>FastAPI</li>
-      <li>Streamlit</li>
-      <li>Machine Learning</li>
-      <li>NLP</li>
-      <li>Forecasting</li>
-      <li>SQL</li>
-      <li>Pandas</li>
-      <li>Scikit-learn</li>
-      <li>Dashboard Development</li>
-      <li>HTML/CSS/JS</li>
-      <li>GitHub</li>
-    </ul>
+    <div class="skills-grid">
+      <span>Python</span>
+      <span>FastAPI</span>
+      <span>Streamlit</span>
+      <span>Machine Learning</span>
+      <span>NLP</span>
+      <span>Forecasting</span>
+      <span>SQL</span>
+      <span>Pandas</span>
+      <span>Scikit-learn</span>
+      <span>HTML/CSS/JS</span>
+      <span>GitHub</span>
+      <span>Deployment</span>
+    </div>
   </section>
 
   <!-- ===== PROJECTS ===== -->
-  <section id="projects" data-aos="fade-left">
+  <section id="projects" class="section" data-aos="fade-left">
     <h2>Featured Projects</h2>
 
-    <div class="project">
-      <h3>📊 AI Academic Analytics Dashboard</h3>
-      <p>
-        A FastAPI + Streamlit SaaS platform for student KPI analytics,
-        PDF reports, performance forecasting, risk alerts, and executive dashboards.
-      </p>
-      <img src="assets/screenshots/academic_dashboard.jpg" alt="AI Academic Dashboard">
-    </div>
+    <div class="projects-grid">
 
-    <div class="project">
-      <h3>🔥 Zyvro AI Product Finder</h3>
-      <p>
-        AI-powered product intelligence platform that identifies
-        Amazon winning products using keyword scoring and market analytics.
-      </p>
-      <img src="assets/screenshots/zyvro_product_analyze.jpg" alt="Zyvro Product Finder">
-    </div>
+      <div class="project-card">
+        <img src="assets/screenshots/academic_dashboard.jpg" alt="AI Academic Dashboard">
+        <h3>AI Academic Analytics Dashboard</h3>
+        <p>FastAPI + Streamlit SaaS for KPI analytics, risk alerts, forecasting and PDF reporting.</p>
+      </div>
 
-    <div class="project">
-      <h3>🚗 Washly Go</h3>
-      <p>
-        A service-booking SaaS platform for car wash and detailing businesses
-        with customer booking workflows and service management.
-      </p>
-      <img src="assets/screenshots/washly_go.jpg" alt="Washly Go">
-    </div>
+      <div class="project-card">
+        <img src="assets/screenshots/zyvro_product_analyze.jpg" alt="Zyvro Product Finder">
+        <h3>Zyvro AI Product Finder</h3>
+        <p>AI-powered Amazon winning product intelligence system with keyword and demand scoring.</p>
+      </div>
 
-    <div class="project">
-      <h3>📄 AI Resume Screening</h3>
-      <p>
-        Intelligent resume parsing and candidate scoring system
-        using NLP pipelines and structured JSON extraction.
-      </p>
-      <img src="assets/screenshots/resume_screening.jpg" alt="Resume Screening">
+      <div class="project-card">
+        <img src="assets/screenshots/washly_go.jpg" alt="Washly Go">
+        <h3>Washly Go</h3>
+        <p>Car wash booking SaaS platform with customer workflows and service management.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="assets/screenshots/resume_screening.jpg" alt="Resume Screening">
+        <h3>AI Resume Screening</h3>
+        <p>Production-ready ATS scoring and JD matching platform with Railway + Streamlit deployment.</p>
+      </div>
+
     </div>
   </section>
 
-  <!-- ===== CERTIFICATES ===== -->
-  <section id="certificates" data-aos="fade-up">
-    <h2>Certificates</h2>
-    <div class="certificates">
-      <img src="assets/certificates/datascience.jpg" alt="Data Science Certificate">
+  <!-- ===== ACHIEVEMENTS ===== -->
+  <section id="achievements" class="section" data-aos="fade-up">
+    <h2>Achievements</h2>
+    <div class="achievement-box">
+      <p>✅ Built and deployed multiple AI SaaS products</p>
+      <p>✅ FastAPI + Streamlit production systems</p>
+      <p>✅ NLP and ATS scoring pipelines</p>
+      <p>✅ Resume screening platform deployed on Railway + Streamlit</p>
     </div>
   </section>
 
   <!-- ===== CONTACT ===== -->
-  <section id="contact" data-aos="zoom-in">
+  <section id="contact" class="section" data-aos="zoom-in">
     <h2>Let’s Connect</h2>
-    <p><strong>Open to AI, Data Science, NLP, and SaaS opportunities.</strong></p>
+    <p><strong>Open to AI Engineer, Data Scientist, and ML roles.</strong></p>
     <p>Email: <a href="mailto:xansar89@gmail.com">xansar89@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammed-ansar-97952b255" target="_blank">linkedin.com/in/muhammed-ansar-97952b255</a></p>
-    <p>GitHub: <a href="https://github.com/xansar1" target="_blank">github.com/xansar1</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammed-ansar-97952b255" target="_blank">Profile</a></p>
+    <p>GitHub: <a href="https://github.com/xansar1" target="_blank">xansar1</a></p>
   </section>
 
   <!-- ===== FOOTER ===== -->
   <footer>
-    <p>© 2026 Muhammed Ansar | AI Portfolio</p>
+    <p>© 2026 Muhammed Ansar | AI Engineer Portfolio</p>
   </footer>
 
   <script>
