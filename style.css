@@ -166,7 +166,7 @@ nav a:hover {
   z-index: 2;
   transform: translateY(-120px) scale(1.08);
 
-  filter: grayscale(100%) brightness(1.45) contrast(1.35);
+  filter: grayscale(100%) brightness(1.25) contrast(1.25);
 
   animation: float 4s ease-in-out infinite;
 }
@@ -474,7 +474,7 @@ footer {
   }
 
   .hero-img-box img {
-    width: 180px;
+    width: 220px;
     transform: none;
     margin-bottom: 10px;
     animation: float 4s ease-in-out infinite;
