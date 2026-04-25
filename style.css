@@ -105,7 +105,8 @@ nav a:hover {
   
   text-align: center;
   white-space: nowrap;
-
+  
+  opacity: 0.6;
   z-index: 0;
   pointer-events: none;
 }
