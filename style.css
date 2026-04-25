@@ -167,6 +167,8 @@ nav a:hover {
   transform: translateY(-120px) scale(1.08);
 
   filter: grayscale(100%) brightness(1.45) contrast(1.35);
+
+  animation: float 4s ease-in-out infinite;
 }
 
 .hero h2 {
@@ -473,8 +475,9 @@ footer {
 
   .hero-img-box img {
     width: 180px;
-    transform: translateY(-30px);
+    transform: none;
     margin-bottom: 10px;
+    animation: float 4s ease-in-out infinite;
   }
 
   .hero h2 {
@@ -634,4 +637,11 @@ footer {
   .impact-grid {
     gap: 20px;
   }
+}
+
+/* ===== FLOAT ANIMATION ===== */
+@keyframes float {
+  0% { transform: translateY(-120px) scale(1.08); }
+  50% { transform: translateY(-140px) scale(1.08); }
+  100% { transform: translateY(-120px) scale(1.08); }
 }
