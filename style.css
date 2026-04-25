@@ -91,18 +91,25 @@ nav a:hover {
 
 .bg-text {
   position: absolute;
-  left: 10%;
+  left: 50%;
   top: 50%;
-  transform: translateY(-50%);
-  font-size: 140px;
-  font-weight: 900;
-  letter-spacing: 8px;
+  transform: translate(-50%, -50%);
+  font-size: 180px;
+  font-weight: 1000;
+  letter-spacing: 12px;
   text-transform: uppercase;
 
-  -webkit-text-stroke: 1px rgba(255,255,255,0.25);
+  color: rgba(255,255,255,0.12);
+  
+  -webkit-text-stroke: 1px rgba(255,255,255,0.35);
+  text-shadow: 0 0 40px rgba(255,255,255,0.15);
+  
   opacity: 0.15;
+  text-align: center;
+  white-space: nowrap;
 
   z-index: 0;
+  pointer-events: none;
 }
 
 .hero-content {
@@ -129,7 +136,7 @@ nav a:hover {
   height: 450px;
   top: 10%;
   left: 50%;
-  transform: translate(-50%, -50);
+  transform: translate(-50%, -50%);
   background: radial-gradient(circle, rgba(168,85,247,0.5), transparent);
   filter: blur(60px);
   z-index: 0;
