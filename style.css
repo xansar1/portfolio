@@ -298,6 +298,44 @@ img {
   margin-bottom: 10px;
 }
 
+.project-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+}
+
+.project-links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+
+  padding: 8px 14px;
+  border-radius: 20px;
+
+  color: #fff;
+  background: rgba(255,255,255,0.08);
+
+  border: 1px solid rgba(255,255,255,0.15);
+
+  transition: all 0.3s ease;
+}
+
+/* hover effect */
+.project-links a:hover {
+  background: linear-gradient(135deg, #7f00ff, #a855f7);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(168,85,247,0.4);
+}
+
+.project-links a:first-child {
+  background: linear-gradient(135deg, #7f00ff, #a855f7);
+}
+
+.project-links a:last-child {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
 /* TEXT */
 .project-card p {
   color: #ccc;
