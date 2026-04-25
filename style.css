@@ -94,15 +94,14 @@ nav a:hover {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 180px;
-  font-weight: 1000;
-  letter-spacing: 12px;
+  font-size: 160px;
+  font-weight: 900;
+  letter-spacing: 10px;
   text-transform: uppercase;
 
-  color: rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.06);
   
-  -webkit-text-stroke: 1px rgba(255,255,255,0.35);
-  text-shadow: 0 0 40px rgba(255,255,255,0.15);
+  -webkit-text-stroke: 1px rgba(255,255,255,0.15);
   
   text-align: center;
   white-space: nowrap;
