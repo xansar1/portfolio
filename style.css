@@ -117,7 +117,8 @@ nav a:hover {
   display: flex;
   min-height: 350px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  pading-top: 40px;
   flex: 1;
 }
 
@@ -138,6 +139,10 @@ nav a:hover {
   object-fit: contain;
   position: relative;
   z-index: 2;
+  transform: translateY(-20px);
+
+  filter: brightness(1.15) contrast(1.1) staturate(1.1)
+          drop-shadow(0 0 25px rgba(168,85,247,0.6));
 }
 
 .hero h2 {
