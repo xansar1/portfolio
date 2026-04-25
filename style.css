@@ -137,7 +137,7 @@ nav a:hover {
   position: absolute;
   inset: 0;
 
-  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  background-image: url("https://www.transparenttextures.com/patterns/noise.png");
   opacity: 0.25;
 
   z-index: 3;
