@@ -541,6 +541,11 @@ footer {
     font-size: 0.9rem;
   }
 
+  .project-card:active {
+    transform: scale(0.98);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  }
+
   /* BUTTONS inside project */
   .project-links {
     flex-direction: column;
