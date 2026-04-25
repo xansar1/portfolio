@@ -118,7 +118,7 @@ nav a:hover {
   min-height: 350px;
   justify-content: center;
   align-items: flex-start;
-  pading-top: 40px;
+  padding-top: 40px;
   flex: 1;
 }
 
@@ -132,6 +132,18 @@ nav a:hover {
   z-index: 0;
 }
 
+.hero-img-box::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity: 0.25;
+
+  z-index: 3;
+  pointer-events: none;
+}
+
 .hero-img-box img {
   width: 320px;
   max-width: 100%;
@@ -139,10 +151,9 @@ nav a:hover {
   object-fit: contain;
   position: relative;
   z-index: 2;
-  transform: translateY(-20px);
+  transform: translateY(-40px);
 
-  filter: brightness(1.15) contrast(1.1) staturate(1.1)
-          drop-shadow(0 0 25px rgba(168,85,247,0.6));
+  filter: grayscale(100%) brightness(1.4) staturate(1.2);
 }
 
 .hero h2 {
