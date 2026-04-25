@@ -12,6 +12,8 @@
 </head>
 <body>
 
+  <div id="progress-bar"></div>
+
   <!-- ===== HEADER ===== -->
   <header class="header">
     <h1 class="logo">Muhammed Ansar</h1>
@@ -19,32 +21,45 @@
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#achievements">Achievements</a>
+      <a href="#impact">Impact</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- ===== HERO ===== -->
-  <section id="hero" class="hero">
-    <div class="hero-content" data-aos="fade-up">
-      <img src="assets/images/profile.jpg" alt="Muhammed Ansar" class="hero-img">
+  <section class="hero">
 
-      <h2>AI Engineer • Data Scientist • Product Builder</h2>
+  <!-- BIG BACKGROUND TEXT -->
+  <h1 class="bg-text">ANSAR</h1>
 
-      <p>
-        I build production-ready AI products using FastAPI, Streamlit,
-        NLP, Forecasting, and ML systems that solve real business problems.
-      </p>
+  <!-- MAIN CONTENT -->
+  <div class="hero-content">
 
-      <div class="hero-buttons">
-        <a href="https://github.com/xansar1" target="_blank" class="btn">GitHub</a>
-        <a href="https://www.linkedin.com/in/muhammed-ansar-97952b255" target="_blank" class="btn">LinkedIn</a>
-        <a href="assets/resume/Muhammed_Ansar_Resume.pdf" download class="btn primary">
-          Download Resume
-        </a>
-      </div>
+    <h2>
+      <span class="highlight">AI Engineer</span><br>
+      <span id="roles"></span>
+    </h2>
+
+    <p>
+      I build end-to-end AI products — from data pipelines and machine learning
+      models to modern web applications and SaaS platforms.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn primary">View Projects</a>
+      <a href="assets/resume/Muhammed_Ansar_Resume.pdf" class="btn" download>
+        Resume
+      </a>
     </div>
-  </section>
+
+  </div>
+
+  <!-- PROFILE -->
+  <div class="hero-img-box">
+    <img src="assets/images/profile.jpg">
+  </div>
+
+</section>
 
   <!-- ===== ABOUT ===== -->
   <section id="about" class="section" data-aos="fade-right">
@@ -79,44 +94,133 @@
   <!-- ===== PROJECTS ===== -->
   <section id="projects" class="section" data-aos="fade-left">
     <h2>Featured Projects</h2>
-
+  
     <div class="projects-grid">
-
+  
+      <!-- PROJECT 1 -->
       <div class="project-card">
         <img src="assets/screenshots/academic_dashboard.jpg" alt="AI Academic Dashboard">
-        <h3>AI Academic Analytics Dashboard</h3>
-        <p>FastAPI + Streamlit SaaS for KPI analytics, risk alerts, forecasting and PDF reporting.</p>
-      </div>
-
+  
+        <h3>AI Academic Dashboard</h3>
+  
+        <p>
+          Built a KPI-driven analytics system with forecasting to identify at-risk students
+          and improve academic decision-making.
+        </p>
+  
+        <div class="tech-tags">
+          <span>FastAPI</span>
+          <span>Streamlit</span>
+          <span>ML</span>
+          <span>Forecasting</span>
+        </div>
+  
+        <div class="project-links">
+          <a href="https://ai-academic-analytics-dashboard-5ujujechqk42wgnsfukjsn.streamlit.app/" target="_blank" rel="noopener noreferrer" class="live">
+            Live Demo
+          </a>
+        
+          <a href="https://github.com/xansar1/academic-dashboard.git" target="_blank" rel="noopener noreferrer" class="github">
+            View Code
+          </a>
+       </div>
+    </div>
+  
+      <!-- PROJECT 2 -->
       <div class="project-card">
         <img src="assets/screenshots/zyvro_product_analyze.jpg" alt="Zyvro Product Finder">
+  
         <h3>Zyvro AI Product Finder</h3>
-        <p>AI-powered Amazon winning product intelligence system with keyword and demand scoring.</p>
+  
+        <p>
+          Developed an AI tool to identify high-demand Amazon products using keyword scoring
+          and market trend analysis.
+        </p>
+  
+        <div class="tech-tags">
+          <span>Python</span>
+          <span>NLP</span>
+          <span>Data Analysis</span>
+        </div>
+  
+         <div class="project-links">
+          <a href="https://zyvro-appuct-finder-jrdbdbwvedohvyj6rfbcax.streamlit.app/" target="_blank" rel="noopener noreferrer" class="live">
+            Live Demo
+          </a>
+        
+          <a href="https://github.com/xansar1/zyvro-product-finder.git" target="_blank" rel="noopener noreferrer" class="github">
+            View Code
+          </a>
+       </div>
       </div>
-
+  
+      <!-- PROJECT 3 -->
       <div class="project-card">
-        <img src="assets/screenshots/washly_go.jpg" alt="Washly Go">
+        <img src="assets/screenshots/washly_go.jpg" alt="Washly Go dress washing booking platform UI">
+  
         <h3>Washly Go</h3>
-        <p>Car wash booking SaaS platform with customer workflows and service management.</p>
+  
+        <p>
+          Designed and developed a SaaS platform for car wash booking with customer workflows,
+          scheduling, and service management.
+        </p>
+  
+        <div class="tech-tags">
+          <span>Web App</span>
+          <span>Booking System</span>
+          <span>UI/UX</span>
+        </div>
+  
+        <div class="project-links">
+          <a href="https://xansar1.github.io/washly-go/" target="_blank" rel="noopener noreferrer" class="live">
+            Live Demo
+          </a>
+        
+          <a href="https://github.com/xansar1/washly-go.git" target="_blank" rel="noopener noreferrer" class="github">
+            View Code
+          </a>
+       </div>
       </div>
-
+  
+      <!-- PROJECT 4 -->
       <div class="project-card">
-        <img src="assets/screenshots/resume_screening.jpg" alt="Resume Screening">
+        <img src="assets/screenshots/resume_screening.jpg" alt="AI Resume Screening">
+  
         <h3>AI Resume Screening</h3>
-        <p>Production-ready ATS scoring and JD matching platform with Railway + Streamlit deployment.</p>
+  
+        <p>
+          Built an ATS system that reduced manual resume screening time and improved candidate filtering accuracy.
+        </p>
+  
+        <div class="tech-tags">
+          <span>NLP</span>
+          <span>ML</span>
+          <span>Streamlit</span>
+          <span>Railway</span>
+        </div>
+  
+        <div class="project-links">
+          <a href="https://ai-resume-screening-iw9dlrbdooi9l4wcmotibx.streamlit.app/" target="_blank" rel="noopener noreferrer" class="live">
+            Live Demo
+          </a>
+        
+          <a href="https://github.com/xansar1/Ai-resume-screening.git" target="_blank" rel="noopener noreferrer" class="github">
+            View Code
+          </a>
+       </div>
       </div>
-
+  
     </div>
   </section>
 
   <!-- ===== ACHIEVEMENTS ===== -->
-  <section id="achievements" class="section" data-aos="fade-up">
-    <h2>Achievements</h2>
-    <div class="achievement-box">
-      <p>✅ Built and deployed multiple AI SaaS products</p>
-      <p>✅ FastAPI + Streamlit production systems</p>
-      <p>✅ NLP and ATS scoring pipelines</p>
-      <p>✅ Resume screening platform deployed on Railway + Streamlit</p>
+  <section id="impact" class="section">
+    <h2>Impact</h2>
+  
+    <div class="impact-grid">
+      <div><h3>5+</h3><p>AI Projects Built</p></div>
+      <div><h3>3+</h3><p>Deployed Systems</p></div>
+      <div><h3>100%</h3><p>Self-driven Learning</p></div>
     </div>
   </section>
 
@@ -127,6 +231,11 @@
     <p>Email: <a href="mailto:xansar89@gmail.com">xansar89@gmail.com</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammed-ansar-97952b255" target="_blank">Profile</a></p>
     <p>GitHub: <a href="https://github.com/xansar1" target="_blank">xansar1</a></p>
+  </section>
+
+  <section class="cta">
+    <h2>Let’s Build Something Powerful</h2>
+    <a href="mailto:xansar89@gmail.com" class="btn primary">Hire Me</a>
   </section>
 
   <!-- ===== FOOTER ===== -->
@@ -146,5 +255,34 @@
       });
     });
   </script>
+
+  <script>
+    window.onscroll = function() {
+      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      let scrolled = (winScroll / height) * 100;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    };
+  </script>
+
+  <script>
+    const roles = ["Data Scientist", "Web Developer", "Product Builder"];
+    let i = 0;
+    const roleEl = document.getElementById("roles");
+    
+    function changeRole() {
+      roleEl.style.opacity = 0;
+    
+      setTimeout(() => {
+        roleEl.textContent = roles[i];
+        roleEl.style.opacity = 1;
+        i = (i + 1) % roles.length;
+      }, 300);
+    }
+    
+    setInterval(changeRole, 2000);
+    changeRole();
+  </script>
+  
 </body>
 </html>
