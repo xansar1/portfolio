@@ -166,7 +166,7 @@ nav a:hover {
   z-index: 2;
   transform: translateY(-120px) scale(1.08);
 
-  filter: grayscale(100%) brightness(1.7) contrast(1.5);
+  filter: grayscale(100%) brightness(1.45) contrast(1.35);
 }
 
 .hero h2 {
