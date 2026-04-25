@@ -474,8 +474,9 @@ footer {
   }
 
   .hero-img-box img {
-    width: 220px;
-    transform: none;
+    width: 230px;
+    max-width: 90%;
+    transform: translateY(-15px);
     margin-bottom: 10px;
     animation: float 4s ease-in-out infinite;
   }
@@ -497,7 +498,7 @@ footer {
   /* BACKGROUND TEXT */
   .bg-text {
     font-size: 60px;
-    opacity: 0.08;
+    opacity: 0.04;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -641,7 +642,7 @@ footer {
 
 /* ===== FLOAT ANIMATION ===== */
 @keyframes float {
-  0% { transform: translateY(-120px) scale(1.08); }
-  50% { transform: translateY(-140px) scale(1.08); }
-  100% { transform: translateY(-120px) scale(1.08); }
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
 }
