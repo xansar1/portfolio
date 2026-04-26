@@ -430,6 +430,10 @@ footer {
   z-index: 9999;
 }
 
+.mobile-cta {
+  display: none;
+}
+
 /* =========================
    MOBILE FIRST (≤768px)
 ========================= */
@@ -574,6 +578,7 @@ footer {
     max-width: 280px;
   }
   .mobile-cta {
+    display: block;
     position: fixed;
     bottom: 15px;
     left: 50%;
