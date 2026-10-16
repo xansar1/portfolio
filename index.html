@@ -1,306 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>AI Engineer Portfolio | Muhammed Ansar | Data Scientist & ML Developer</title>
-  <meta name="description" content="AI Engineer and Data Scientist specializing in machine learning, NLP, and data analytics. Explore projects, dashboards, and real-world AI applications built by Muhammed Ansar.">
-  <meta name="keywords" content="AI Engineer, Data Scientist, Machine Learning, NLP, Portfolio, Python Developer, Analytics Dashboard">
-
-  <meta property="og:title" content="Muhammed Ansar | AI Engineer Portfolio">
-  <meta property="og:description" content="AI Engineer building ML models, NLP systems, and data-driven applications.">
-  <meta property="og:image" content="assets/images/profile.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#070b16">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Muhammed Ansar is an AI engineer and product builder creating intelligent applications, data platforms, automation systems and memorable web experiences.">
+  <meta name="keywords" content="Muhammed Ansar, AI Engineer, Machine Learning, Data Scientist, Full Stack Developer, Python, FastAPI, AI Portfolio, Kerala">
+  <meta name="author" content="Muhammed Ansar">
+  <meta name="robots" content="index, follow">
   <meta property="og:type" content="website">
-
+  <meta property="og:title" content="Muhammed Ansar — AI Engineer & Product Builder">
+  <meta property="og:description" content="Engineering intelligence. Designing experiences. Explore selected AI, automation and web projects.">
+  <meta property="og:image" content="https://xansar1.github.io/portfolio/assets/images/profile.png">
+  <meta property="og:url" content="https://xansar1.github.io/portfolio/">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="canonical" href="https://xansar1.github.io/portfolio/">
-  <link rel="stylesheet" href="style.css"/>
   <link rel="icon" type="image/png" href="assets/images/icon.png">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Muhammed Ansar — AI Engineer & Product Builder</title>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muhammed Ansar","url":"https://xansar1.github.io/portfolio/","image":"https://xansar1.github.io/portfolio/assets/images/profile.png","jobTitle":"AI Engineer & Product Builder","sameAs":["https://github.com/xansar1","https://www.linkedin.com/in/muhammed-ansar-97952b255"]}</script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="site-noise" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
 
-  <div id="progress-bar"></div>
-
-  <!-- ===== HEADER ===== -->
-  <header class="header">
-    <h1 class="logo">Muhammed Ansar</h1>
-    <nav>
+  <header class="site-header" id="siteHeader">
+    <a href="#top" class="brand" aria-label="Muhammed Ansar, back to top">
+      <span class="brand-symbol">M<span>.</span>A</span>
+      <span class="brand-divider" aria-hidden="true"></span>
+      <span class="brand-caption">ENGINEER <span>&</span> CREATOR</span>
+    </a>
+    <nav class="site-nav" id="siteNav" aria-label="Primary navigation">
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
+      <a href="#expertise">Expertise</a>
       <a href="#projects">Projects</a>
-      <a href="#impact">Impact</a>
+      <a href="#process">Approach</a>
       <a href="#contact">Contact</a>
+      <a class="nav-mobile-cta" href="assets/resume/Muhammed_Ansar_Resume.pdf" download>Get résumé ↗</a>
     </nav>
+    <a href="assets/resume/Muhammed_Ansar_Resume.pdf" class="header-cta" download>Résumé <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="siteNav"><span></span><span></span></button>
   </header>
 
-  <!-- ===== HERO ===== -->
-  <section class="hero">
-
-  <!-- BIG BACKGROUND TEXT -->
-  <h1 class="bg-text">ANSAR</h1>
-
-  <!-- MAIN CONTENT -->
-  <div class="hero-content">
-
-    <h1>
-      <span class="highlight">AI Engineer</span>
-    </h1>
-      
-    <h2>   
-      <span id="roles"></span>
-    </h2>
-
-    <p>
-      I build end-to-end AI products — from data pipelines and machine learning
-      models to modern web applications and SaaS platforms.
-    </p>
-
-    <div class="hero-buttons">
-      <a href="#projects" class="btn primary">View Projects</a>
-      <a href="assets/resume/Muhammed_Ansar_Resume.pdf" class="btn" download>
-        Resume
-      </a>
-    </div>
-
-  </div>
-
-  <!-- PROFILE -->
-  <div class="hero-img-box">
-    <img src="assets/images/profile.png" alt="Muhammed Ansar AI Engineer Profile Photo">
-  </div>
-
-</section>
-
-  <!-- ===== ABOUT ===== -->
-  <section id="about" class="section" data-aos="fade-right">
-    <h2>About Me</h2>
-    <p>
-      I specialize in building real-world AI and data science products
-      focused on ATS systems, analytics dashboards, NLP pipelines,
-      forecasting engines, SaaS platforms, and automation workflows.
-      My mission is turning raw data into decision-ready business intelligence.
-    </p>
-  </section>
-
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="section" data-aos="fade-up">
-    <h2>Core Skills</h2>
-    <div class="skills-grid">
-      <span>Python</span>
-      <span>FastAPI</span>
-      <span>Streamlit</span>
-      <span>Machine Learning</span>
-      <span>NLP</span>
-      <span>Forecasting</span>
-      <span>SQL</span>
-      <span>Pandas</span>
-      <span>Scikit-learn</span>
-      <span>HTML/CSS/JS</span>
-      <span>GitHub</span>
-      <span>Deployment</span>
-    </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="section" data-aos="fade-left">
-    <h2>Featured Projects</h2>
-  
-    <div class="projects-grid">
-  
-      <!-- PROJECT 1 -->
-      <div class="project-card">
-        <img src="assets/screenshots/academic_dashboard.jpg" alt="AI Academic Dashboard">
-  
-        <h3>AI Academic Dashboard</h3>
-  
-        <p>
-          Built a KPI-driven academic analytics system with predictive forecasting 
-          to identify at-risk students early and support data-driven academic decisions.
-        </p>
-  
-        <div class="tech-tags">
-          <span>FastAPI</span>
-          <span>Streamlit</span>
-          <span>ML</span>
-          <span>Forecasting</span>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="heroTitle">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-left">
+        <div class="eyebrow hero-eyebrow reveal"><span class="pulse-dot"></span> OPEN TO IMPACTFUL OPPORTUNITIES <span class="eyebrow-rule"></span> PORTFOLIO / 2026</div>
+        <p class="hero-overline reveal">Hi, I'm Muhammed Ansar <span aria-hidden="true">✳</span></p>
+        <h1 id="heroTitle" class="hero-title reveal">I BUILD<br><span class="outline-text">WHAT'S</span><br><span class="gradient-text">NEXT<span class="period">.</span></span></h1>
+        <p class="hero-description reveal">AI engineer and product builder crafting intelligent systems, beautiful digital products, and experiences that feel a little ahead of their time.</p>
+        <div class="hero-role-line reveal"><span class="mini-square" aria-hidden="true"></span><span id="rotatingRole">AI ENGINEER</span><span class="role-cursor" aria-hidden="true">_</span></div>
+        <div class="hero-actions reveal">
+          <a class="button button-primary magnetic" href="#projects">Explore my work <span class="button-arrow" aria-hidden="true">↗</span></a>
+          <a class="button button-text" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
         </div>
-  
-        <div class="project-links">
-          <a href="https://ai-academic-analytics-dashboard-5ujujechqk42wgnsfukjsn.streamlit.app/" target="_blank" rel="noopener noreferrer" class="live">
-            Live Demo
-          </a>
-        
-          <a href="https://github.com/xansar1/academic-dashboard.git" target="_blank" rel="noopener noreferrer" class="github">
-            View Code
-          </a>
-       </div>
-    </div>
-  
-      <!-- PROJECT 2 -->
-      <div class="project-card">
-        <img src="assets/screenshots/zyvro_product_analyze.jpg" alt="Zyvro Product Finder">
-  
-        <h3>Zyvro AI Product Finder</h3>
-  
-        <p>
-          Developed an AI-powered product research tool that analyzes keywords, demand signals, 
-          and trends to identify high-potential Amazon products.
-        </p>
-          
-        <div class="tech-tags">
-          <span>Python</span>
-          <span>NLP</span>
-          <span>Data Analysis</span>
-        </div>
-  
-         <div class="project-links">
-          <a href="https://zyvro-appuct-finder-jrdbdbwvedohvyj6rfbcax.streamlit.app/" target="_blank" rel="noopener noreferrer" class="live">
-            Live Demo
-          </a>
-        
-          <a href="https://github.com/xansar1/zyvro-product-finder.git" target="_blank" rel="noopener noreferrer" class="github">
-            View Code
-          </a>
-       </div>
+        <div class="hero-meta reveal"><div class="meta-line" aria-hidden="true"></div><span>SCROLL TO EXPLORE</span><span class="scroll-mouse" aria-hidden="true"><span></span></span></div>
       </div>
-  
-      <!-- PROJECT 3 -->
-      <div class="project-card">
-        <img src="assets/screenshots/washly_go.jpg" alt="Washly Go dress washing booking platform UI">
-  
-        <h3>Washly Go</h3>
-  
-        <p>
-          Built a SaaS-based car wash booking platform with real-time scheduling, 
-          service management, and customer workflow automation.
-        </p>
-  
-        <div class="tech-tags">
-          <span>Web App</span>
-          <span>Booking System</span>
-          <span>UI/UX</span>
+
+      <div class="hero-right" aria-label="Interactive three-dimensional abstract technology sculpture">
+        <div class="scene-backlight" aria-hidden="true"></div>
+        <div class="scene-box" id="sceneBox">
+          <div class="scene-fallback" aria-hidden="true"><div class="fallback-orbit orbit-one"></div><div class="fallback-orbit orbit-two"></div><div class="fallback-core"></div><div class="fallback-inner"></div></div>
+          <div class="webgl-mount" id="webglMount" aria-hidden="true"></div>
         </div>
-  
-        <div class="project-links">
-          <a href="https://xansar1.github.io/washly-go/" target="_blank" rel="noopener noreferrer" class="live">
-            Live Demo
-          </a>
-        
-          <a href="https://github.com/xansar1/washly-go.git" target="_blank" rel="noopener noreferrer" class="github">
-            View Code
-          </a>
-       </div>
+        <div class="orbit-label orbit-label-top" aria-hidden="true"><span class="label-point"></span> INTELLIGENCE / IN MOTION</div>
+        <div class="orbit-label orbit-label-bottom" aria-hidden="true">01 — CREATING THE FUTURE <span class="label-line"></span></div>
+        <div class="floating-chip chip-one" aria-hidden="true"><span class="chip-icon">✦</span><span><strong>AI / ML</strong><small>INTELLIGENT SYSTEMS</small></span></div>
+        <div class="floating-chip chip-two" aria-hidden="true"><span class="chip-icon">⌘</span><span><strong>WEB / 3D</strong><small>DIGITAL EXPERIENCES</small></span></div>
+        <span class="scene-cross cross-a" aria-hidden="true">+</span><span class="scene-cross cross-b" aria-hidden="true">+</span>
       </div>
-  
-      <!-- PROJECT 4 -->
-      <div class="project-card">
-        <img src="assets/screenshots/resume_screening.jpg" alt="AI Resume Screening">
-  
-        <h3>AI Resume Screening</h3>
-  
-        <p>
-          Built an AI-based ATS system using NLP to automate resume screening 
-          and improve candidate matching efficiency.
-        </p>
-  
-        <div class="tech-tags">
-          <span>NLP</span>
-          <span>ML</span>
-          <span>Streamlit</span>
-          <span>Railway</span>
+      <div class="hero-side-label" aria-hidden="true">DEVELOPMENT • DESIGN • ARTIFICIAL INTELLIGENCE</div>
+    </section>
+
+    <div class="marquee-bar" aria-hidden="true"><div class="marquee-track"><span>ENGINEERING INTELLIGENCE <b>✳</b> BUILDING USEFUL PRODUCTS <b>✳</b> DESIGNING THE FUTURE <b>✳</b> CREATING WITH PURPOSE <b>✳</b> ENGINEERING INTELLIGENCE <b>✳</b> BUILDING USEFUL PRODUCTS <b>✳</b> DESIGNING THE FUTURE <b>✳</b> CREATING WITH PURPOSE <b>✳</b></span></div></div>
+
+    <section class="section about-section" id="about" aria-labelledby="aboutTitle">
+      <div class="section-top reveal"><span class="section-index">01 / ABOUT</span><span class="section-line" aria-hidden="true"></span><span class="section-side">THE HUMAN BEHIND THE CODE</span></div>
+      <div class="about-layout">
+        <div class="about-visual reveal">
+          <div class="photo-frame tilt-card" data-tilt>
+            <div class="photo-number">FIG. 01 — THE BUILDER</div>
+            <div class="photo-grid" aria-hidden="true"></div>
+            <img src="assets/images/profile.png" alt="Portrait of Muhammed Ansar" width="530" height="620" loading="lazy">
+            <span class="photo-decoration" aria-hidden="true">MA<span>✳</span></span>
+          </div>
+          <span class="photo-footnote">CURIOUS BY NATURE. BUILDER BY CHOICE.</span>
         </div>
-  
-        <div class="project-links">
-          <a href="https://ai-resume-screening-iw9dlrbdooi9l4wcmotibx.streamlit.app/" target="_blank" rel="noopener noreferrer" class="live">
-            Live Demo
-          </a>
-        
-          <a href="https://github.com/xansar1/Ai-resume-screening.git" target="_blank" rel="noopener noreferrer" class="github">
-            View Code
-          </a>
-       </div>
+        <div class="about-copy">
+          <span class="kicker reveal">WHO I AM <span aria-hidden="true">↗</span></span>
+          <h2 id="aboutTitle" class="section-heading reveal">Beyond the <em>code.</em><br>Into the <em>possibility.</em></h2>
+          <p class="lead reveal">I turn complex ideas into things people can actually use.</p>
+          <p class="about-paragraph reveal">I’m Muhammed Ansar, an AI engineer and hands-on product builder exploring the intersection of machine learning, automation, data, and modern web development. I love taking a concept from a rough sketch to a working experience.</p>
+          <p class="about-paragraph reveal">My work spans predictive dashboards, NLP tools, real-world booking workflows, and AI-powered platforms. I care about the details — performance, usability, and the small interactions that make technology feel human.</p>
+          <div class="about-facts reveal"><div><span>FOCUS</span><strong>Applied AI + Products</strong></div><div><span>MINDSET</span><strong>Build · Test · Improve</strong></div></div>
+          <a class="inline-link reveal" href="assets/resume/Muhammed_Ansar_Resume.pdf" download>Download résumé <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-  
-    </div>
-  </section>
+    </section>
 
-  <!-- ===== ACHIEVEMENTS ===== -->
-  <section id="impact" class="section">
-    <h2>Impact</h2>
-  
-    <div class="impact-grid">
-      <div><h3>5+</h3><p>AI Projects Built</p></div>
-      <div><h3>3+</h3><p>Deployed Systems</p></div>
-      <div><h3>100%</h3><p>Self-driven Learning</p></div>
-    </div>
-  </section>
+    <section class="section expertise-section" id="expertise" aria-labelledby="expertiseTitle">
+      <div class="section-top reveal"><span class="section-index">02 / EXPERTISE</span><span class="section-line" aria-hidden="true"></span><span class="section-side">MY CREATIVE TOOLKIT</span></div>
+      <div class="section-title-row"><div><span class="kicker reveal">THINGS I DO BEST</span><h2 class="section-heading reveal" id="expertiseTitle">Tech meets <em>imagination.</em></h2></div><p class="section-intro reveal">A practical toolkit for designing, developing, and shipping intelligent digital products.</p></div>
+      <div class="expertise-grid">
+        <article class="expertise-card tilt-card reveal" data-tilt><span class="expertise-number">01</span><div class="expertise-icon" aria-hidden="true">✳</div><h3>Artificial Intelligence</h3><p>Machine learning, NLP, predictive systems, and practical AI workflows built around real problems.</p><div class="expertise-tags"><span>Python</span><span>Scikit-learn</span><span>NLP</span><span>ML</span></div><span class="card-corner" aria-hidden="true">↗</span></article>
+        <article class="expertise-card tilt-card reveal" data-tilt><span class="expertise-number">02</span><div class="expertise-icon" aria-hidden="true">⌘</div><h3>Full-stack Engineering</h3><p>From front-end interactions to APIs, databases, integrations, and deployable web applications.</p><div class="expertise-tags"><span>FastAPI</span><span>HTML / CSS / JS</span><span>SQL</span><span>Git</span></div><span class="card-corner" aria-hidden="true">↗</span></article>
+        <article class="expertise-card tilt-card reveal" data-tilt><span class="expertise-number">03</span><div class="expertise-icon" aria-hidden="true">◈</div><h3>Data & Automation</h3><p>Making raw data understandable and automating the repetitive work between insight and action.</p><div class="expertise-tags"><span>Pandas</span><span>Analytics</span><span>Streamlit</span><span>Workflows</span></div><span class="card-corner" aria-hidden="true">↗</span></article>
+      </div>
+      <div class="skill-rail reveal" aria-label="Additional technical skills"><span class="rail-label">WORKING WITH</span><div class="rail-tags"><span>Python</span><span>FastAPI</span><span>JavaScript</span><span>Streamlit</span><span>SQL</span><span>Pandas</span><span>Forecasting</span><span>GitHub</span><span>Deployment</span></div></div>
+    </section>
 
-  <!-- ===== CONTACT ===== -->
-  <section id="contact" class="section" data-aos="zoom-in">
-    <h2>Let’s Connect</h2>
-    <p><strong>Open to AI Engineer, Data Scientist, and ML roles.</strong></p>
-    <p>Email: <a href="mailto:xansar89@gmail.com">xansar89@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammed-ansar-97952b255" target="_blank">Profile</a></p>
-    <p>GitHub: <a href="https://github.com/xansar1" target="_blank">xansar1</a></p>
-  </section>
+    <section class="section projects-section" id="projects" aria-labelledby="projectsTitle">
+      <div class="section-top reveal"><span class="section-index">03 / SELECTED WORK</span><span class="section-line" aria-hidden="true"></span><span class="section-side">FROM IDEAS TO EXPERIENCES</span></div>
+      <div class="section-title-row projects-title-row"><div><span class="kicker reveal">FEATURED PROJECTS</span><h2 class="section-heading reveal" id="projectsTitle">Proof in the <em>projects.</em></h2></div><p class="section-intro reveal">A mix of AI systems, products, and experiments. Each one is a different problem worth solving.</p></div>
+      <div class="project-toolbar reveal" role="group" aria-label="Filter projects"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All work <span>06</span></button><button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI / Data</button><button class="filter-button" type="button" data-filter="product" aria-pressed="false">Web / Products</button><span class="project-toolbar-note" id="projectCount" aria-live="polite">SHOWING 06 PROJECTS</span></div>
+      <div class="project-grid" id="projectGrid">
+        <article class="project-card reveal" data-category="ai"><div class="project-art"><img src="assets/screenshots/academic_dashboard.jpg" alt="AI Academic Analytics Dashboard screenshot" loading="lazy" width="750" height="480"><span class="project-type">AI / DATA SCIENCE</span><span class="project-art-number">01</span></div><div class="project-info"><div class="project-name-row"><h3>AI Academic Dashboard</h3><span aria-hidden="true">↗</span></div><p>KPI-focused academic analytics and predictive forecasting to help spot at-risk students earlier.</p><div class="project-bottom"><div class="project-tech"><span>FastAPI</span><span>Streamlit</span><span>Forecasting</span></div><div class="project-actions"><a href="https://ai-academic-analytics-dashboard-5ujujechqk42wgnsfukjsn.streamlit.app/" target="_blank" rel="noopener noreferrer">Demo ↗</a><a href="https://github.com/xansar1/academic-dashboard" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div></div></article>
+        <article class="project-card reveal" data-category="ai"><div class="project-art"><img src="assets/screenshots/zyvro_product_analyze.jpg" alt="Zyvro AI Product Finder dashboard screenshot" loading="lazy" width="750" height="480"><span class="project-type">AI / PRODUCT RESEARCH</span><span class="project-art-number">02</span></div><div class="project-info"><div class="project-name-row"><h3>Zyvro AI Product Finder</h3><span aria-hidden="true">↗</span></div><p>Product-research workflow exploring demand signals, keywords, and trends with data analysis and NLP.</p><div class="project-bottom"><div class="project-tech"><span>Python</span><span>NLP</span><span>Analytics</span></div><div class="project-actions"><a href="https://zyvro-appuct-finder-jrdbdbwvedohvyj6rfbcax.streamlit.app/" target="_blank" rel="noopener noreferrer">Demo ↗</a><a href="https://github.com/xansar1/zyvro-product-finder" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div></div></article>
+        <article class="project-card reveal" data-category="product"><div class="project-art"><img src="assets/screenshots/washly_go.jpg" alt="Washly Go booking interface screenshot" loading="lazy" width="750" height="480"><span class="project-type">WEB / BOOKING</span><span class="project-art-number">03</span></div><div class="project-info"><div class="project-name-row"><h3>Washly Go</h3><span aria-hidden="true">↗</span></div><p>A service-booking interface exploring scheduling, customer flows, and simplified operations.</p><div class="project-bottom"><div class="project-tech"><span>Web App</span><span>Bookings</span><span>UI / UX</span></div><div class="project-actions"><a href="https://xansar1.github.io/washly-go/" target="_blank" rel="noopener noreferrer">Demo ↗</a><a href="https://github.com/xansar1/washly-go" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div></div></article>
+        <article class="project-card reveal" data-category="ai"><div class="project-art"><img src="assets/screenshots/resume_screening.jpg" alt="AI Resume Screening application screenshot" loading="lazy" width="750" height="480"><span class="project-type">AI / AUTOMATION</span><span class="project-art-number">04</span></div><div class="project-info"><div class="project-name-row"><h3>AI Resume Screening</h3><span aria-hidden="true">↗</span></div><p>Natural-language processing for extracting and assessing résumé information in an ATS-style workflow.</p><div class="project-bottom"><div class="project-tech"><span>NLP</span><span>ML</span><span>Streamlit</span></div><div class="project-actions"><a href="https://ai-resume-screening-iw9dlrbdooi9l4wcmotibx.streamlit.app/" target="_blank" rel="noopener noreferrer">Demo ↗</a><a href="https://github.com/xansar1/Ai-resume-screening" target="_blank" rel="noopener noreferrer">Code ↗</a></div></div></div></article>
+        <article class="project-card reveal" data-category="ai"><div class="project-art generative-art generative-edu"><div class="illustration-label">EDUNOVA<span>LEARN.</span></div><div class="illustration-glyph" aria-hidden="true">✺</div><span class="project-type">AI / EDTECH · IN DEVELOPMENT</span><span class="project-art-number">05</span></div><div class="project-info"><div class="project-name-row"><h3>EduNovaLearn</h3><span aria-hidden="true">↗</span></div><p>AI-assisted textbook study-material workflows with source-grounding and validation for classroom content.</p><div class="project-bottom"><div class="project-tech"><span>Python</span><span>LLMs</span><span>Education</span></div><div class="project-actions"><span class="project-status">In development</span></div></div></div></article>
+        <article class="project-card reveal" data-category="product"><div class="project-art generative-art generative-flow"><div class="illustration-label">REPLYFLOW<span>AI.</span></div><div class="flow-bubbles" aria-hidden="true"><i></i><i></i><i></i></div><span class="project-type">AI / AUTOMATION · PROTOTYPE</span><span class="project-art-number">06</span></div><div class="project-info"><div class="project-name-row"><h3>ReplyFlow AI</h3><span aria-hidden="true">↗</span></div><p>A WhatsApp business-inquiry automation prototype with AI / human handoff and appointment workflows.</p><div class="project-bottom"><div class="project-tech"><span>FastAPI</span><span>WhatsApp API</span><span>Automation</span></div><div class="project-actions"><span class="project-status">Prototype</span></div></div></div></article>
+      </div>
+      <a class="all-work-link reveal" href="https://github.com/xansar1" target="_blank" rel="noopener noreferrer"><span>MORE EXPERIMENTS LIVE ON GITHUB</span><strong>Explore repository <span aria-hidden="true">↗</span></strong></a>
+    </section>
 
-  <section class="cta">
-    <h2>Let’s Build Something Powerful</h2>
-    <a href="mailto:xansar89@gmail.com" class="btn primary">Hire Me</a>
-  </section>
+    <section class="section impact-section" id="impact" aria-labelledby="impactTitle"><div class="section-top reveal"><span class="section-index">04 / THE NUMBERS</span><span class="section-line" aria-hidden="true"></span><span class="section-side">SMALL STEPS. REAL PROGRESS.</span></div><div class="impact-inner"><div><span class="kicker reveal">LEARNING BY BUILDING</span><h2 class="section-heading reveal" id="impactTitle">Always in <em>motion.</em></h2><p class="impact-copy reveal">Every prototype is a chance to learn something new. The work keeps evolving, and so do I.</p></div><div class="stats"><div class="stat reveal"><strong data-count="5" data-suffix="+">5+</strong><span>AI PROJECTS & EXPERIMENTS</span></div><div class="stat reveal"><strong data-count="3" data-suffix="+">3+</strong><span>DEPLOYED DEMOS & SYSTEMS</span></div><div class="stat stat-word reveal"><strong>∞</strong><span>CURIOSITY TO KEEP LEARNING</span></div></div></div></section>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    <p>© 2026 Muhammed Ansar | AI Engineer Portfolio</p>
-  </footer>
+    <section class="section process-section" id="process" aria-labelledby="processTitle"><div class="section-top reveal"><span class="section-index">05 / APPROACH</span><span class="section-line" aria-hidden="true"></span><span class="section-side">HOW IDEAS TAKE SHAPE</span></div><div class="section-title-row"><div><span class="kicker reveal">MY CREATIVE PROCESS</span><h2 id="processTitle" class="section-heading reveal">From “what if”<br>to <em>what's real.</em></h2></div><p class="section-intro reveal">Good work lives between experimentation and execution. Here's how I like to get there.</p></div><div class="process-steps"><div class="process-step reveal"><span class="step-index">01 / DISCOVER</span><span class="step-icon" aria-hidden="true">◌</span><h3>Find the signal</h3><p>Understand the user, context, and the real problem worth solving.</p></div><div class="process-step reveal"><span class="step-index">02 / DESIGN</span><span class="step-icon" aria-hidden="true">◇</span><h3>Shape the idea</h3><p>Map the experience, prototype quickly, and simplify the complex.</p></div><div class="process-step reveal"><span class="step-index">03 / BUILD</span><span class="step-icon" aria-hidden="true">⌘</span><h3>Make it real</h3><p>Connect clean code, capable models, and thoughtful interfaces.</p></div><div class="process-step reveal"><span class="step-index">04 / REFINE</span><span class="step-icon" aria-hidden="true">✳</span><h3>Keep improving</h3><p>Test, measure, polish, and move toward something genuinely useful.</p></div></div>
+      <div class="certificate-note reveal"><div><span class="certificate-icon" aria-hidden="true">✧</span><span><strong>Keep learning, keep creating.</strong><small>Explore my data science certificate.</small></span></div><a href="assets/certificates/datascience.jpg" target="_blank" rel="noopener noreferrer">View certificate ↗</a></div>
+    </section>
 
-  <div class="mobile-cta">
-    <a href="mailto:xansar89@gmail.com" class="btn"> Hire Me</a>
-  </div>
+    <section class="contact-section" id="contact" aria-labelledby="contactTitle"><div class="contact-glow" aria-hidden="true"></div><div class="contact-top reveal"><span class="section-index">06 / CONTACT</span><span>GOT AN INTERESTING IDEA?</span></div><div class="contact-content"><p class="kicker reveal"><span class="pulse-dot"></span> OPEN TO CONVERSATIONS</p><h2 id="contactTitle" class="contact-title reveal">LET'S MAKE<br><em>SOMETHING</em><br><span>MATTER<span class="period">.</span></span></h2><p class="contact-description reveal">A product to build, an AI challenge to solve, or just a good conversation? My inbox is open.</p><a class="contact-email reveal" href="mailto:xansar89@gmail.com">xansar89@gmail.com <span aria-hidden="true">↗</span></a><div class="contact-links reveal"><a href="https://github.com/xansar1" target="_blank" rel="noopener noreferrer">GITHUB ↗</a><a href="https://www.linkedin.com/in/muhammed-ansar-97952b255" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a><a href="assets/resume/Muhammed_Ansar_Resume.pdf" download>RÉSUMÉ ↗</a></div></div><div class="contact-bottom"><span>BUILD WITH INTENTION.</span><span>CREATE WITHOUT LIMITS.</span></div></section>
+  </main>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-  <script>
-    AOS.init({ duration: 1000, once: true });
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-
-  <script>
-    window.onscroll = function() {
-      let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      let scrolled = (winScroll / height) * 100;
-      document.getElementById("progress-bar").style.width = scrolled + "%";
-    };
-  </script>
-
-  <script>
-    const roles = ["Data Scientist", "Web Developer", "Product Builder"];
-    let i = 0;
-    const roleEl = document.getElementById("roles");
-    
-    function changeRole() {
-      roleEl.style.opacity = 0;
-    
-      setTimeout(() => {
-        roleEl.textContent = roles[i];
-        roleEl.style.opacity = 1;
-        i = (i + 1) % roles.length;
-      }, 300);
-    }
-    
-    setInterval(changeRole, 2000);
-    changeRole();
-  </script>
-  
+  <footer class="site-footer"><a class="footer-brand" href="#top" aria-label="Back to top">M<span>.</span>A</a><span>© <span id="year">2026</span> MUHAMMED ANSAR · BUILT WITH CURIOSITY</span><a href="#top" class="back-to-top">BACK TO TOP ↑</a></footer>
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}.scene-fallback{opacity:1!important}</style></noscript>
+  <script src="main.js" defer></script>
 </body>
 </html>
