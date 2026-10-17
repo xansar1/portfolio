@@ -1,0 +1,128 @@
+/* Portfolio Cartoon Avatar Hero V1
+   Overlay-only update: the original page structure and theme remain intact.
+   The portrait is approved 2.5D artwork, not a 360-degree 3D face mesh. */
+.hero-right.avatar-edition {
+  perspective: 1200px;
+  isolation: isolate;
+}
+.hero-right.avatar-edition .scene-fallback,
+.hero-right.avatar-edition .webgl-mount { display: none !important; }
+.hero-right.avatar-edition .scene-box { perspective: 1200px; overflow: visible; }
+.hero-right.avatar-edition .avatar-stage {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  overflow: visible;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  isolation: isolate;
+}
+.avatar-stage::before {
+  content: "";
+  position: absolute;
+  inset: 9%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(84,55,193,.19), rgba(60,83,183,.11) 42%, transparent 71%);
+  filter: blur(16px);
+  z-index: 0;
+}
+.avatar-stage .avatar-orbit {
+  position: absolute;
+  top: 51%; left: 50%;
+  width: 85%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 2px solid rgba(192,161,255,.39);
+  border-left-color: rgba(167,247,226,.62);
+  border-bottom-color: rgba(167,247,226,.52);
+  box-shadow: 0 0 24px rgba(150,117,250,.07), inset 0 0 17px rgba(155,123,250,.08);
+  transform-style: preserve-3d;
+  will-change: transform;
+  z-index: 1;
+}
+.avatar-stage .avatar-orbit-a { animation: avatar-orbit-a 21s linear infinite; }
+.avatar-stage .avatar-orbit-b {
+  width: 75%;
+  border-width: 1.5px;
+  border-color: rgba(162,241,236,.55);
+  border-right-color: rgba(152,106,252,.5);
+  animation: avatar-orbit-b 18s linear infinite;
+}
+.avatar-stage .avatar-orbit-c {
+  width: 96%;
+  border-width: 1px;
+  border-color: rgba(151,129,230,.27);
+  animation: avatar-orbit-c 26s linear infinite;
+}
+.avatar-stage .avatar-motion {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  transform-style: preserve-3d;
+  transform: rotateY(var(--avatar-ry, 0deg)) rotateX(var(--avatar-rx, 0deg));
+  transition: transform .4s cubic-bezier(.2,.8,.2,1);
+}
+.avatar-stage .avatar-portrait {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  display: block;
+  width: min(80%, 540px);
+  height: auto;
+  max-width: none;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 20px 28px rgba(3,5,26,.38)) drop-shadow(0 0 22px rgba(128,91,252,.2));
+  user-select: none;
+  -webkit-user-drag: none;
+  animation: avatar-gentle-float 5.8s ease-in-out infinite;
+}
+.avatar-stage .avatar-glow-dot {
+  position:absolute;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #9df4de;
+  box-shadow: 0 0 15px #92f3e2aa;
+  z-index: 3;
+  animation: avatar-dot-pulse 3.5s ease-in-out infinite;
+}
+.avatar-stage .avatar-glow-dot-a { top: 18%; left: 23%; }
+.avatar-stage .avatar-glow-dot-b { top: 77%; right: 10%; width: 5px; height: 5px; animation-delay: -1.5s; background: #c3a6ff; }
+.hero-right.avatar-edition .floating-chip { z-index: 7; }
+.hero-right.avatar-edition .orbit-label { z-index: 7; }
+.hero-right.avatar-edition .scene-cross { z-index: 7; }
+@keyframes avatar-orbit-a {
+  from { transform: translate(-50%, -50%) rotate(-33deg) rotateY(63deg) rotateZ(0deg); }
+  to { transform: translate(-50%, -50%) rotate(-33deg) rotateY(63deg) rotateZ(360deg); }
+}
+@keyframes avatar-orbit-b {
+  from { transform: translate(-50%, -50%) rotate(62deg) rotateX(61deg) rotateZ(0deg); }
+  to { transform: translate(-50%, -50%) rotate(62deg) rotateX(61deg) rotateZ(-360deg); }
+}
+@keyframes avatar-orbit-c {
+  from { transform: translate(-50%, -50%) rotate(12deg) rotateY(20deg) rotateZ(0deg); }
+  to { transform: translate(-50%, -50%) rotate(12deg) rotateY(20deg) rotateZ(360deg); }
+}
+@keyframes avatar-gentle-float {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-9px); }
+}
+@keyframes avatar-dot-pulse { 0%,100% { opacity:.4;transform:scale(.7); } 50%{opacity:1;transform:scale(1.25)} }
+@media (max-width: 900px) {
+  .hero-right.avatar-edition .scene-box { overflow: hidden; }
+  .avatar-stage .avatar-portrait { width: min(80%, 490px); bottom: 0; }
+  .avatar-stage .avatar-orbit { width: 83%; }
+}
+@media (max-width: 620px) {
+  .hero-right.avatar-edition .avatar-stage { overflow: visible; }
+  .avatar-stage .avatar-portrait { width: min(78%, 370px); bottom: 0; }
+  .avatar-stage .avatar-orbit { width: 84%; }
+  .avatar-stage .avatar-orbit-c { width: 96%; }
+  .hero-right.avatar-edition .chip-one { left: 0; }
+  .hero-right.avatar-edition .chip-two { right: 1%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .avatar-stage *, .avatar-stage *::before, .avatar-stage *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

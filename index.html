@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="avatar.css">
   <link rel="stylesheet" href="icons.css">
   <title>Muhammed Ansar — AI Engineer & Product Builder</title>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Muhammed Ansar","url":"https://xansar1.github.io/portfolio/","image":"https://xansar1.github.io/portfolio/assets/images/profile.png","jobTitle":"AI Engineer & Product Builder","sameAs":["https://github.com/xansar1","https://www.linkedin.com/in/muhammed-ansar-97952b255"]}</script>
@@ -67,11 +68,21 @@
         <div class="hero-meta reveal"><div class="meta-line" aria-hidden="true"></div><span>SCROLL TO EXPLORE</span><span class="scroll-mouse" aria-hidden="true"><span></span></span></div>
       </div>
 
-      <div class="hero-right" aria-label="Interactive three-dimensional abstract technology sculpture">
+      <div class="hero-right avatar-edition" aria-label="Animated cartoon avatar of Muhammed Ansar with AI skill stickers">
         <div class="scene-backlight" aria-hidden="true"></div>
         <div class="scene-box" id="sceneBox">
+          <div class="avatar-stage" id="avatarStage" aria-hidden="true">
+            <div class="avatar-orbit avatar-orbit-a"></div>
+            <div class="avatar-orbit avatar-orbit-b"></div>
+            <div class="avatar-orbit avatar-orbit-c"></div>
+            <div class="avatar-glow-dot avatar-glow-dot-a"></div>
+            <div class="avatar-glow-dot avatar-glow-dot-b"></div>
+            <div class="avatar-motion" id="avatarMotion">
+              <img class="avatar-portrait" src="assets/images/ansar-cartoon-avatar.webp" width="504" height="628" alt="" fetchpriority="high" decoding="async">
+            </div>
+          </div>
           <div class="scene-fallback" aria-hidden="true"><div class="fallback-orbit orbit-one"></div><div class="fallback-orbit orbit-two"></div><div class="fallback-core"></div><div class="fallback-inner"></div></div>
-          <div class="webgl-mount" id="webglMount" aria-hidden="true"></div>
+          <div class="webgl-mount" id="webglMountAvatarDisabled" aria-hidden="true"></div>
         </div>
         <div class="orbit-label orbit-label-top" aria-hidden="true"><span class="label-point"></span> INTELLIGENCE / IN MOTION</div>
         <div class="orbit-label orbit-label-bottom" aria-hidden="true">01 — CREATING THE FUTURE <span class="label-line"></span></div>
@@ -146,5 +157,6 @@
   <footer class="site-footer"><a class="footer-brand" href="#top" aria-label="Back to top">M<span>.</span>A</a><span>© <span id="year">2026</span> MUHAMMED ANSAR · BUILT WITH CURIOSITY</span><a href="#top" class="back-to-top">BACK TO TOP <svg class="svg-icon icon-arrow-up" viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m6 12 6-6 6 6M12 6v12"/></svg></a></footer>
   <noscript><style>.reveal{opacity:1!important;transform:none!important}.scene-fallback{opacity:1!important}</style></noscript>
   <script src="main.js" defer></script>
+  <script src="avatar.js" defer></script>
 </body>
 </html>
