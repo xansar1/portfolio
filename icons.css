@@ -1,0 +1,47 @@
+/* Portfolio iOS Emoji -> SVG Icon Fix | no runtime, libraries or CDN required */
+.svg-icon {
+  display: inline-block;
+  width: 1.15em;
+  height: 1.15em;
+  flex: none;
+  vertical-align: -0.14em;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  overflow: visible;
+}
+/* Text and CTA icons: stay on the baseline on Android, Safari and Instagram in-app browser. */
+.header-cta .svg-icon, .nav-mobile-cta .svg-icon,
+.button .svg-icon, .inline-link .svg-icon,
+.all-work-link .svg-icon, .project-actions .svg-icon,
+.contact-email .svg-icon, .contact-links .svg-icon,
+.back-to-top .svg-icon, .certificate-note a .svg-icon {
+  width: 1em; height: 1em; margin-left: .15em;
+}
+.button-arrow .svg-icon { margin-left: 0; }
+.header-cta span .svg-icon { width: 1em; height: 1em; }
+/* Keep title/project corner glyphs proportional even where earlier styles expect text spans. */
+.kicker .svg-icon, .card-corner .svg-icon, .project-name-row .svg-icon,
+.all-work-link strong .svg-icon { width: 1em; height: 1em; }
+.project-name-row > span { display: inline-flex; align-items: center; justify-content: center; }
+/* Original ornamental star was rendered as a green emoji tile on iOS. */
+.hero-spark { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle; color: #a5f3df; }
+.hero-spark .svg-icon { width: 1.05em; height: 1.05em; }
+.marquee-spark { display: inline-flex; align-items: center; justify-content: center; vertical-align: middle; }
+.marquee-spark .svg-icon { width: .92em; height: .92em; }
+.photo-decoration .svg-icon { width: .65em; height: .65em; vertical-align: middle; }
+/* Replaces emoji-like decorative symbols with coherent stroked icons. */
+.chip-icon .svg-icon { width: 20px; height: 20px; }
+.expertise-icon .svg-icon { width: 1em; height: 1em; stroke-width: 1.25; }
+.step-icon .svg-icon { width: 1em; height: 1em; stroke-width: 1.4; }
+.certificate-icon .svg-icon { width: 1em; height: 1em; stroke-width: 1.5; }
+.illustration-glyph .svg-icon { width: 1em; height: 1em; stroke-width: 1; }
+/* Force the statistics symbol to a text glyph rather than colorful emoji. */
+.infinity-text { font-variant-emoji: text; }
+@media (max-width: 620px) {
+  .chip-icon .svg-icon { width: 15px; height: 15px; }
+  .button .svg-icon { width: 1.05em; height: 1.05em; }
+  .hero-spark .svg-icon { width: 1em; height: 1em; }
+}
