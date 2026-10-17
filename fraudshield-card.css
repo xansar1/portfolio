@@ -1,0 +1,15 @@
+
+/* FraudShield AI featured card. Isolated from the site's existing styles. */
+.generative-fraudshield{background:radial-gradient(circle at 92% 19%,#44417f55,transparent 51%),linear-gradient(125deg,#0c1625,#0e2630 65%,#17173d);overflow:hidden;}
+.generative-fraudshield .fraud-sim{position:absolute;top:9%;left:8%;right:8%;bottom:19%;border:1px solid #58728b66;border-radius:15px;background:#0d1628dd;box-shadow:0 18px 45px #03081777,0 0 40px #7df7d111;transform:perspective(800px) rotateY(-6deg) rotateX(2deg);padding:12px 15px;transition:transform .45s ease;}
+.generative-fraudshield:hover .fraud-sim{transform:perspective(800px) rotateY(0) rotateX(0) translateY(-2px);}
+.fraud-ui-heading{display:flex;align-items:center;gap:10px;font:700 18px 'Space Grotesk',sans-serif;color:#f0f4ff;line-height:1;}
+.fraud-ui-heading strong{color:#8af8d9;font-weight:700}.fraud-ui-heading small{display:block;font-size:6px;letter-spacing:.22em;color:#7f9ab5;margin-top:5px}
+.fraud-logo{display:grid;place-items:center;width:30px;height:30px;border-radius:8px;background:#94f9d9;color:#10312e;font-size:24px}
+.fraud-ui-metrics{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}
+.fraud-ui-metrics>div{padding:8px 11px;border:1px solid #46557488;border-radius:7px;background:#152039}
+.fraud-ui-metrics small{font:700 7px 'Space Grotesk',sans-serif;letter-spacing:.12em;color:#9eafc7;display:block}
+.fraud-ui-metrics strong{display:block;font:700 25px 'Space Grotesk',sans-serif;color:#eef5ff;margin-top:2px}
+.fraud-ui-chart{margin-top:11px;padding:4px 4px 2px;border:1px solid #34476388;border-radius:6px;background:#0f1c30}
+.fraud-ui-chart svg{display:block;width:100%;height:69px}
+@media(max-width:620px){.generative-fraudshield .fraud-sim{left:9%;right:9%;top:7%;bottom:18%;padding:10px 13px}.fraud-ui-chart svg{height:60px}.fraud-ui-metrics strong{font-size:20px}}
