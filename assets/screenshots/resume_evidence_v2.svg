@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" role="img" aria-labelledby="mainTitle mainDesc">
+<title id="mainTitle">Resume Evidence Explorer V2 project illustration</title><desc id="mainDesc">Editorial illustration of fictional resume and job-description skill comparisons in a dark mint and violet research dashboard. Not a screenshot.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b1527"/><stop offset="1" stop-color="#222041"/></linearGradient><linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#102e3a"/><stop offset="1" stop-color="#2a2145"/></linearGradient><linearGradient id="mint" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#9cffe1"/><stop offset="1" stop-color="#80e6d5"/></linearGradient><linearGradient id="purple" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b7a7ff"/><stop offset="1" stop-color="#7480eb"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="28"/></filter></defs>
+<rect width="1200" height="760" fill="url(#bg)"/>
+<circle cx="1010" cy="120" r="190" fill="#614fa4" opacity=".15" filter="url(#glow)"/>
+<rect x="0" y="0" width="250" height="760" fill="#0c182c"/><path d="M250 0V760" stroke="#32445d"/>
+<rect x="26" y="42" width="53" height="53" rx="15" fill="url(#mint)"/><text x="52" y="78" font-family="Arial,sans-serif" font-weight="bold" font-size="32" fill="#102c36" text-anchor="middle">R</text>
+<text x="91" y="76" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#f2f8ff">resume<tspan fill="#97f7d9">.lab</tspan></text>
+<text x="28" y="165" font-family="Arial,sans-serif" font-size="13" fill="#829ebc" letter-spacing="3">EXPLORATION / V2</text>
+<text x="28" y="214" font-family="Arial,sans-serif" font-size="19" fill="#e4f1ff" font-weight="bold">Evidence workspace</text>
+<text x="28" y="252" font-family="Arial,sans-serif" font-size="16" fill="#a8bbd6">Document parsing</text>
+<text x="28" y="287" font-family="Arial,sans-serif" font-size="16" fill="#a8bbd6">Skill mentions</text>
+<text x="28" y="322" font-family="Arial,sans-serif" font-size="16" fill="#a8bbd6">Lexical NLP</text>
+<rect x="22" y="386" width="203" height="112" rx="15" fill="#15283c" stroke="#466478"/><text x="40" y="421" font-family="Arial,sans-serif" font-size="16" fill="#9ff3d9" font-weight="bold">Privacy-first demo</text><text x="40" y="450" font-family="Arial,sans-serif" font-size="13" fill="#c3d7e4">Fictional samples</text><text x="40" y="472" font-family="Arial,sans-serif" font-size="13" fill="#c3d7e4">Human review only</text>
+<rect x="278" y="55" width="894" height="359" rx="23" fill="url(#hero)" stroke="#394c69"/>
+<text x="319" y="105" font-family="Arial,sans-serif" font-size="14" fill="#9ff9e1" font-weight="bold" letter-spacing="3">RESEARCH INTELLIGENCE / 2026</text>
+<text x="319" y="217" font-family="Arial,sans-serif" font-size="69" fill="url(#mint)" font-weight="bold" letter-spacing="-3">See the evidence.</text>
+<text x="319" y="305" font-family="Arial,sans-serif" font-size="60" fill="url(#mint)" font-weight="bold" letter-spacing="-3">Not a hiring verdict.</text>
+<text x="319" y="369" font-family="Arial,sans-serif" font-size="16" fill="#b8ced9">RESUME  /  JOB BRIEF  /  EXPLAINABLE TEXT SIGNALS</text>
+<text x="288" y="467" font-family="Arial,sans-serif" font-size="15" fill="#a9bcd3" letter-spacing="2">01  INPUT DOCUMENTS</text>
+<rect x="281" y="488" width="421" height="236" rx="14" fill="#121d32" stroke="#364c68"/><rect x="719" y="488" width="448" height="236" rx="14" fill="#121d32" stroke="#364c68"/>
+<text x="303" y="524" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#f0f4ff">Fictional résumé</text>
+<text x="742" y="524" font-family="Arial,sans-serif" font-size="20" font-weight="bold" fill="#f0f4ff">Job requirements</text>
+<rect x="305" y="548" width="116" height="29" rx="15" fill="#174d4d"/><text x="322" y="568" font-family="Arial,sans-serif" font-size="14" fill="#aaffdf">Python</text>
+<rect x="431" y="548" width="78" height="29" rx="15" fill="#174d4d"/><text x="446" y="568" font-family="Arial,sans-serif" font-size="14" fill="#aaffdf">SQL</text>
+<rect x="520" y="548" width="145" height="29" rx="15" fill="#174d4d"/><text x="535" y="568" font-family="Arial,sans-serif" font-size="14" fill="#aaffdf">FastAPI</text>
+<rect x="743" y="548" width="116" height="29" rx="15" fill="#174d4d"/><text x="760" y="568" font-family="Arial,sans-serif" font-size="14" fill="#aaffdf">Python</text>
+<rect x="867" y="548" width="78" height="29" rx="15" fill="#174d4d"/><text x="882" y="568" font-family="Arial,sans-serif" font-size="14" fill="#aaffdf">SQL</text>
+<rect x="953" y="548" width="96" height="29" rx="15" fill="#332d57"/><text x="973" y="568" font-family="Arial,sans-serif" font-size="14" fill="#c9bdff">Docker</text>
+<rect x="1056" y="548" width="78" height="29" rx="15" fill="#332d57"/><text x="1078" y="568" font-family="Arial,sans-serif" font-size="14" fill="#c9bdff">AWS</text>
+<path d="M309 619 H669 M309 642 H635 M309 666 H591 M309 691 H654" stroke="#3b4e68" stroke-width="10" stroke-linecap="round"/>
+<path d="M745 619 H1133 M745 642 H1090 M745 666 H1058 M745 691 H1110" stroke="#3b4e68" stroke-width="10" stroke-linecap="round"/>
+</svg>
